@@ -8,7 +8,7 @@ permalink: /about/
   
   <div class="about-header" style="text-align: center; margin-bottom: 3rem;">
     <div class="profile-photo" style="margin-bottom: 2rem;">
-      <img src="{{ '/assets/img/i.jpg' | relative_url }}" alt="Ishita Dasgupta" style="width: 200px; height: 200px; border-radius: 50%; border: 2px solid #2a2a2a; object-fit: cover;">
+      <img src="{{ '/assets/img/i.jpg' | absolute_url }}" alt="Ishita Dasgupta" style="width: 200px; height: 200px; border-radius: 50%; border: 2px solid #2a2a2a; object-fit: cover;">
     </div>
     <h1 style="font-size: 2.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px;">About Me</h1>
     <div class="divider" style="width: 60px; height: 1px; background: #a8c5e0; margin: 0 auto;"></div>

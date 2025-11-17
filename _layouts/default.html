@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   
   <!-- Base URL fix for GitHub Pages -->
+  {% if site.baseurl != "" %}
   <base href="{{ site.baseurl }}/">
+  {% endif %}
   
   <style>
     * {

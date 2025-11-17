@@ -20,7 +20,7 @@ permalink: /education/
       <div class="timeline-content">
         <h3 style="font-size: 1.5rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Ph.D. in Computer Science</h3>
         <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 1rem;">University of Massachusetts, Amherst</p>
-        <p style="color: #808080; margin-bottom: 1.5rem; font-size: 0.9rem;">Sep 2016 - Feb 2023 | Advised by Prof. Michael Zink</p>
+        <p style="color: #808080; margin-bottom: 1.5rem; font-size: 0.9rem;">Advised by Prof. Michael Zink</p>
         
         <div style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border: 1px solid #2a2a2a; margin-bottom: 1rem; border-left: 3px solid #a8c5e0;">
           <h4 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400;">Dissertation</h4>
@@ -64,9 +64,6 @@ permalink: /education/
                   {% if paper.venue %}
                     <span style="color: #808080;"> | {{ paper.venue }}</span>
                   {% endif %}
-                  {% if paper.year %}
-                    <span style="color: #808080;"> ({{ paper.year }})</span>
-                  {% endif %}
                   {% if paper.link %}
                     <a href="{{ paper.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; margin-left: 0.5rem; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;" onmouseover="this.style.borderBottomColor='#a8c5e0'" onmouseout="this.style.borderBottomColor='transparent'">[Link]</a>
                   {% endif %}
@@ -79,29 +76,25 @@ permalink: /education/
                 <li style="margin-bottom: 1rem; padding-left: 0.5rem; position: relative;">
                   <span style="position: absolute; left: -0.5rem; color: #a8c5e0;">•</span>
                   <strong style="color: #e8e8e8;">A Hybrid NDN-IP Architecture for Live Video Streaming: From Host-Based to Content-Based Delivery to Improve QoE</strong>
-                  <span style="color: #808080;"> | International Journal of Semantic Computing (2022)</span>
-                  <span style="color: #808080;"> (2022)</span>
+                  <span style="color: #808080;"> | International Journal of Semantic Computing</span>
                   <a href="https://doi.org/10.1142/S1793351X22400074" target="_blank" style="color: #a8c5e0; text-decoration: none; margin-left: 0.5rem; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;" onmouseover="this.style.borderBottomColor='#a8c5e0'" onmouseout="this.style.borderBottomColor='transparent'">[DOI]</a>
                 </li>
                 <li style="margin-bottom: 1rem; padding-left: 0.5rem; position: relative;">
                   <span style="position: absolute; left: -0.5rem; color: #a8c5e0;">•</span>
                   <strong style="color: #e8e8e8;">An Information Centric Framework for Weather Sensing Data</strong>
-                  <span style="color: #808080;"> | RAFNet at ICC 2022</span>
-                  <span style="color: #808080;"> (2022)</span>
+                  <span style="color: #808080;"> | RAFNet at ICC</span>
                   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:qjMakFHDy7sC" target="_blank" style="color: #a8c5e0; text-decoration: none; margin-left: 0.5rem; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;" onmouseover="this.style.borderBottomColor='#a8c5e0'" onmouseout="this.style.borderBottomColor='transparent'">[Link]</a>
                 </li>
                 <li style="margin-bottom: 1rem; padding-left: 0.5rem; position: relative;">
                   <span style="position: absolute; left: -0.5rem; color: #a8c5e0;">•</span>
                   <strong style="color: #e8e8e8;">A Hybrid NDN-IP Architecture for Live Video Streaming: A QoE Analysis</strong>
-                  <span style="color: #808080;"> | 2021 IEEE International Symposium on Multimedia (ISM)</span>
-                  <span style="color: #808080;"> (2021)</span>
+                  <span style="color: #808080;"> | IEEE International Symposium on Multimedia (ISM)</span>
                   <a href="https://doi.org/10.1109/ISM52913.2021.00032" target="_blank" style="color: #a8c5e0; text-decoration: none; margin-left: 0.5rem; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;" onmouseover="this.style.borderBottomColor='#a8c5e0'" onmouseout="this.style.borderBottomColor='transparent'">[DOI]</a>
                 </li>
                 <li style="margin-bottom: 1rem; padding-left: 0.5rem; position: relative;">
                   <span style="position: absolute; left: -0.5rem; color: #a8c5e0;">•</span>
                   <strong style="color: #e8e8e8;">High-Resolution Hydrologic Forecasting for Very Large Urban Areas</strong>
                   <span style="color: #808080;"> | Journal of Hydroinformatics</span>
-                  <span style="color: #808080;"> (2019)</span>
                   <a href="https://doi.org/10.2166/hydro.2019.10" target="_blank" style="color: #a8c5e0; text-decoration: none; margin-left: 0.5rem; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;" onmouseover="this.style.borderBottomColor='#a8c5e0'" onmouseout="this.style.borderBottomColor='transparent'">[DOI]</a>
                 </li>
               </ul>
@@ -143,7 +136,7 @@ permalink: /education/
           </h4>
           <div id="phd-research-content" style="display: block;">
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              <strong style="color: #e8e8e8;">Multimedia & Networks Lab</strong> | Advised by Prof. Michael Zink | Sep 2016 - Feb 2023
+              <strong style="color: #e8e8e8;">Multimedia & Networks Lab</strong> | Advised by Prof. Michael Zink
             </p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
               Conducted research on optimizing multimedia experiences in live video streaming. Worked on network protocols, adaptive streaming algorithms, and multimedia systems optimization. Published multiple papers in top-tier conferences and journals.
@@ -158,7 +151,7 @@ permalink: /education/
           </h4>
           <div id="phd-teaching-content" style="display: block;">
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              <strong style="color: #e8e8e8;">CS 653: Advanced Computer Networks</strong> | Aug 2020 – Dec 2020
+              <strong style="color: #e8e8e8;">CS 653: Advanced Computer Networks</strong>
             </p>
           </div>
         </div>
@@ -255,23 +248,6 @@ permalink: /education/
           </div>
         </div>
 
-        <div style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border: 1px solid #2a2a2a; margin-bottom: 1rem;">
-          <h4 onclick="toggleSection('ms-teaching')" style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 0.5rem;">
-            <span id="ms-teaching-icon" style="transition: transform 0.3s;">▼</span>
-            Teaching Assistant
-          </h4>
-          <div id="ms-teaching-content" style="display: block;">
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              <strong style="color: #e8e8e8;">CS121: Introduction to Computer Science</strong> | Spring 2015
-            </p>
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              <strong style="color: #e8e8e8;">CS187: Data Structures</strong> | Fall 2015
-            </p>
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
-              Supported undergraduate courses, helping students with programming assignments, conducting lab sessions, and providing academic support.
-            </p>
-          </div>
-        </div>
 
         <div style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border: 1px solid #2a2a2a;">
           <h4 onclick="toggleSection('ms-leadership')" style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 0.5rem;">
@@ -318,7 +294,6 @@ h4[onclick]:hover {
 #phd-leadership-content,
 #ms-courses-content,
 #ms-research-content,
-#ms-teaching-content,
 #ms-leadership-content {
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
   overflow: hidden;
@@ -331,7 +306,6 @@ h4[onclick]:hover {
 #phd-leadership-content.hidden,
 #ms-courses-content.hidden,
 #ms-research-content.hidden,
-#ms-teaching-content.hidden,
 #ms-leadership-content.hidden {
   display: none !important;
 }
@@ -437,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize all sections as hidden by default
   const sections = [
     'phd-courses', 'phd-research', 'phd-papers', 'phd-teaching', 'phd-leadership',
-    'ms-courses', 'ms-research', 'ms-teaching', 'ms-leadership'
+    'ms-courses', 'ms-research', 'ms-leadership'
   ];
   
   sections.forEach(sectionId => {
