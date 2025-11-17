@@ -54,7 +54,16 @@ layout: default
       <!-- Recent Publications Tab -->
       <div id="tab-publications" class="tab-content active" style="display: block;">
         <div class="publications-list" style="display: grid; gap: 1.5rem;">
-          {% assign sorted_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date contains '2025'" | sort: 'date' | reverse %}
+          {% assign all_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
+          {% assign h2_2025_pubs = "" | split: "," %}
+          {% for pub in all_pubs %}
+            {% assign pub_year = pub.date | date: '%Y' | plus: 0 %}
+            {% assign pub_month = pub.date | date: '%m' | plus: 0 %}
+            {% if pub_year == 2025 and pub_month >= 7 and pub_month <= 12 %}
+              {% assign h2_2025_pubs = h2_2025_pubs | push: pub %}
+            {% endif %}
+          {% endfor %}
+          {% assign sorted_pubs = h2_2025_pubs %}
           {% for pub in sorted_pubs limit: 5 %}
           <div class="publication-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #a8c5e0; border: 1px solid #2a2a2a; transition: border-color 0.3s;">
             <h3 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.5;">
