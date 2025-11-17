@@ -9,7 +9,7 @@ permalink: /education/
   <div class="education-header" style="text-align: center; margin-bottom: 3rem;">
     <h1 style="font-size: 2.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px;">Education & Academic Experience</h1>
     <div class="divider" style="width: 60px; height: 1px; background: #a8c5e0; margin: 0 auto;"></div>
-    <p style="color: #b0b0b0; margin-top: 1rem; font-size: 1rem;">Academic journey, research assistantships, teaching, and leadership (2014-2022)</p>
+    <p style="color: #b0b0b0; margin-top: 1rem; font-size: 1rem;">Academic journey, research assistantships, teaching, and leadership (Feb 2023)</p>
   </div>
 
   <div class="education-timeline" style="position: relative; padding-left: 2rem;">
@@ -51,7 +51,7 @@ permalink: /education/
         <div style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border: 1px solid #2a2a2a; margin-bottom: 1rem;">
           <h4 onclick="toggleSection('phd-papers')" style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 0.5rem;">
             <span id="phd-papers-icon" style="transition: transform 0.3s;">▼</span>
-            Papers (2016-2023)
+            Papers 
           </h4>
           <div id="phd-papers-content" style="display: block;">
             {% assign phd_papers = site.publications | where_exp: "pub", "pub.year >= 2016 and pub.year <= 2023" | sort: 'year' | reverse %}
