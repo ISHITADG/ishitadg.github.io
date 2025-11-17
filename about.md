@@ -67,23 +67,18 @@ permalink: /about/
       
       <div class="interests-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
         <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #a8c5e0; border: 1px solid #2a2a2a;">
-          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Short Video Understanding</h3>
+          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">🎥 Short Video Understanding</h3>
           <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Understanding editing patterns, engagement factors, and narrative structures in short-form videos, applied to content creation workflows</p>
         </div>
         
         <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #c4a8d8; border: 1px solid #2a2a2a;">
-          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Data-Driven Multimodal Understanding</h3>
+          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">🧠 Data-Driven Multimodal Understanding</h3>
           <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Training models to understand multimodal data and using insights to optimize content creation workflows</p>
         </div>
         
         <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #d4b5b5; border: 1px solid #2a2a2a;">
-          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Dynamic Planning in Agents/MLLMs</h3>
+          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">🔮 Dynamic Planning in Agents/MLLMs</h3>
           <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Developing data-driven agents with advanced planning capabilities for content creation workflows</p>
-        </div>
-        
-        <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #a8c5e0; border: 1px solid #2a2a2a;">
-          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Content Creation Applications</h3>
-          <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Applying research insights to optimize creative workflows and improve content creation processes</p>
         </div>
       </div>
     </div>
