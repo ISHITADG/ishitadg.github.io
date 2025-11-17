@@ -6,7 +6,7 @@ venue: "2025 IEEE International Conference on Multimedia and Expo (ICME)"
 year: 2025
 citations: 0
 link: "https://www.computer.org/csdl/proceedings-article/icme/2025/11209033/2beBnLiAcqA"
-image: "/assets/img/final_poster.pdf"
+image: "/assets/img/smartedit.png"
 date: 2025-07-01
 ---
 
