@@ -14,165 +14,167 @@ permalink: /news/
 
   <!-- Interactive Timeline Section -->
   <section id="timeline" class="news-section" style="margin-bottom: 4rem;">
-    <h2 style="font-size: 2rem; color: #e8e8e8; margin-bottom: 2rem; border-left: 2px solid #a8c5e0; padding-left: 1rem; font-weight: 400;">
+    <h2 style="font-size: 2rem; color: #e8e8e8; margin-bottom: 3rem; text-align: center; font-weight: 400;">
       Recent News Timeline
     </h2>
     
-    <div class="timeline-container" style="position: relative; padding-left: 2rem;">
+    <div class="timeline-container" style="position: relative; max-width: 800px; margin: 0 auto;">
+      <!-- Vertical Line -->
+      <div class="timeline-line" style="position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #2a2a2a;"></div>
       
       <!-- H2 2025 -->
-      <div class="timeline-period" style="margin-bottom: 3rem;">
-        <div class="timeline-period-header" style="display: flex; align-items: center; margin-bottom: 1.5rem; cursor: pointer;" onclick="togglePeriod('h2-2025')">
-          <div class="timeline-marker" style="position: absolute; left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f; margin-right: 1rem;"></div>
-          <h3 style="font-size: 1.5rem; color: #e8e8e8; font-weight: 400; margin: 0;">H2 2025</h3>
-          <span class="toggle-icon" id="h2-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
-        </div>
-        <div class="timeline-content" id="h2-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign all_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
-          {% for pub in all_pubs %}
-            {% assign pub_year = pub.date | date: '%Y' | plus: 0 %}
-            {% assign pub_month = pub.date | date: '%m' | plus: 0 %}
-            {% if pub_year == 2025 and pub_month >= 7 and pub_month <= 12 %}
-            {% unless pub.title contains "SmartEdit" %}
+      <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
+        <div class="timeline-dot" onclick="togglePeriod('h2-2025')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
+        <div class="timeline-content-wrapper" style="margin-left: 50px;">
+          <div class="timeline-header" onclick="togglePeriod('h2-2025')" style="cursor: pointer; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.3rem; color: #e8e8e8; font-weight: 400; margin: 0;">H2 2025</h3>
+          </div>
+          <div class="timeline-content" id="h2-2025-content" style="display: none; padding-left: 1rem; border-left: 1px solid #2a2a2a; margin-left: 0.5rem;">
+            {% assign all_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
+            {% for pub in all_pubs %}
+              {% assign pub_year = pub.date | date: '%Y' | plus: 0 %}
+              {% assign pub_month = pub.date | date: '%m' | plus: 0 %}
+              {% if pub_year == 2025 and pub_month >= 7 and pub_month <= 12 %}
+              {% unless pub.title contains "SmartEdit" %}
+              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+                  {{ pub.title }}
+                </h4>
+                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                  {{ pub.authors }}
+                </p>
+                {% if pub.venue and pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    {{ pub.venue }}, {{ pub_month_display }} {{ pub.date | date: "%Y" }}
+                  </p>
+                {% elsif pub.venue %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
+                {% elsif pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month_display }} {{ pub.date | date: "%Y" }}</p>
+                {% endif %}
+                {% if pub.link %}
+                <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+                  View on Google Scholar →
+                </a>
+                {% endif %}
+              </div>
+              {% endunless %}
+              {% endif %}
+            {% endfor %}
+            <!-- SVU Workshop -->
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
               <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
-                {{ pub.title }}
+                SVU 2025 Workshop: The First Workshop on Short-Form Video Understanding
               </h4>
-              <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
-                {{ pub.authors }}
+              <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                ICCV 2025, Oct 2025
               </p>
-              {% if pub.venue and pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                  {{ pub.venue }}, {{ pub_month }} {{ pub.date | date: "%Y" }}
-                </p>
-              {% elsif pub.venue %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
-              {% elsif pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month }} {{ pub.date | date: "%Y" }}</p>
-              {% endif %}
-              {% if pub.link %}
-              <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                View on Google Scholar →
+              <a href="https://short-form-video-understanding.github.io/" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+                Visit Workshop Website →
               </a>
-              {% endif %}
             </div>
-            {% endunless %}
-            {% endif %}
-          {% endfor %}
-          <!-- SVU Workshop -->
-          <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-            <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
-              SVU 2025 Workshop: The First Workshop on Short-Form Video Understanding
-            </h4>
-            <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
-              ICCV 2025, Oct 2025
-            </p>
-            <a href="https://short-form-video-understanding.github.io/" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-              Visit Workshop Website →
-            </a>
           </div>
         </div>
       </div>
 
       <!-- H1 2025 -->
-      <div class="timeline-period" style="margin-bottom: 3rem;">
-        <div class="timeline-period-header" style="display: flex; align-items: center; margin-bottom: 1.5rem; cursor: pointer;" onclick="togglePeriod('h1-2025')">
-          <div class="timeline-marker" style="position: absolute; left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f; margin-right: 1rem;"></div>
-          <h3 style="font-size: 1.5rem; color: #e8e8e8; font-weight: 400; margin: 0;">H1 2025</h3>
-          <span class="toggle-icon" id="h1-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
-        </div>
-        <div class="timeline-content" id="h1-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign all_pubs_h1 = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
-          {% for pub in all_pubs_h1 %}
-            {% assign pub_year_h1 = pub.date | date: '%Y' | plus: 0 %}
-            {% assign pub_month_h1 = pub.date | date: '%m' | plus: 0 %}
-            {% if pub_year_h1 == 2025 and pub_month_h1 >= 1 and pub_month_h1 < 7 %}
-            {% if pub.title contains "SmartEdit" %}
-            <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-              <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
-                {{ pub.title }}
-              </h4>
-              <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
-                {{ pub.authors }}
-              </p>
-              {% if pub.venue and pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                  {{ pub.venue }}, {{ pub_month }} {{ pub.date | date: "%Y" }}
+      <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
+        <div class="timeline-dot" onclick="togglePeriod('h1-2025')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
+        <div class="timeline-content-wrapper" style="margin-left: 50px;">
+          <div class="timeline-header" onclick="togglePeriod('h1-2025')" style="cursor: pointer; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.3rem; color: #e8e8e8; font-weight: 400; margin: 0;">H1 2025</h3>
+          </div>
+          <div class="timeline-content" id="h1-2025-content" style="display: none; padding-left: 1rem; border-left: 1px solid #2a2a2a; margin-left: 0.5rem;">
+            {% assign all_pubs_h1 = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
+            {% for pub in all_pubs_h1 %}
+              {% if pub.title contains "SmartEdit" %}
+              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+                  {{ pub.title }}
+                </h4>
+                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                  {{ pub.authors }}
                 </p>
-              {% elsif pub.venue %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
-              {% elsif pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month }} {{ pub.date | date: "%Y" }}</p>
+                {% if pub.venue and pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    {{ pub.venue }}, {{ pub_month_display }} {{ pub.date | date: "%Y" }}
+                  </p>
+                {% elsif pub.venue %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
+                {% elsif pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month_display }} {{ pub.date | date: "%Y" }}</p>
+                {% endif %}
+                {% if pub.link %}
+                <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+                  View on Google Scholar →
+                </a>
+                {% endif %}
+              </div>
               {% endif %}
-              {% if pub.link %}
-              <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                View on Google Scholar →
-              </a>
-              {% endif %}
-            </div>
-            {% endif %}
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
       </div>
 
       <!-- H2 2024 -->
-      <div class="timeline-period" style="margin-bottom: 3rem;">
-        <div class="timeline-period-header" style="display: flex; align-items: center; margin-bottom: 1.5rem; cursor: pointer;" onclick="togglePeriod('h2-2024')">
-          <div class="timeline-marker" style="position: absolute; left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f; margin-right: 1rem;"></div>
-          <h3 style="font-size: 1.5rem; color: #e8e8e8; font-weight: 400; margin: 0;">H2 2024</h3>
-          <span class="toggle-icon" id="h2-2024-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
-        </div>
-        <div class="timeline-content" id="h2-2024-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          <p style="color: #808080; font-style: italic; font-size: 0.9rem;">-</p>
+      <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
+        <div class="timeline-dot" onclick="togglePeriod('h2-2024')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
+        <div class="timeline-content-wrapper" style="margin-left: 50px;">
+          <div class="timeline-header" onclick="togglePeriod('h2-2024')" style="cursor: pointer; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.3rem; color: #e8e8e8; font-weight: 400; margin: 0;">H2 2024</h3>
+          </div>
+          <div class="timeline-content" id="h2-2024-content" style="display: none; padding-left: 1rem; border-left: 1px solid #2a2a2a; margin-left: 0.5rem;">
+            <p style="color: #808080; font-style: italic; font-size: 0.9rem;">-</p>
+          </div>
         </div>
       </div>
 
       <!-- H1 2024 -->
-      <div class="timeline-period" style="margin-bottom: 3rem;">
-        <div class="timeline-period-header" style="display: flex; align-items: center; margin-bottom: 1.5rem; cursor: pointer;" onclick="togglePeriod('h1-2024')">
-          <div class="timeline-marker" style="position: absolute; left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f; margin-right: 1rem;"></div>
-          <h3 style="font-size: 1.5rem; color: #e8e8e8; font-weight: 400; margin: 0;">H1 2024</h3>
-          <span class="toggle-icon" id="h1-2024-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
-        </div>
-        <div class="timeline-content" id="h1-2024-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign all_pubs_2024 = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
-          {% for pub in all_pubs_2024 %}
-            {% assign pub_year_2024 = pub.date | date: '%Y' | plus: 0 %}
-            {% assign pub_month_2024 = pub.date | date: '%m' | plus: 0 %}
-            {% if pub_year_2024 == 2024 and pub_month_2024 >= 1 and pub_month_2024 < 7 %}
-            {% if pub.title contains "Large content" or pub.title contains "Text-to-hand" %}
-            <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-              <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
-                {{ pub.title }}
-              </h4>
-              <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
-                {{ pub.authors }}
-              </p>
-              {% if pub.venue and pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
-                  {{ pub.venue }}, {{ pub_month }} {{ pub.date | date: "%Y" }}
+      <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
+        <div class="timeline-dot" onclick="togglePeriod('h1-2024')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
+        <div class="timeline-content-wrapper" style="margin-left: 50px;">
+          <div class="timeline-header" onclick="togglePeriod('h1-2024')" style="cursor: pointer; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.3rem; color: #e8e8e8; font-weight: 400; margin: 0;">H1 2024</h3>
+          </div>
+          <div class="timeline-content" id="h1-2024-content" style="display: none; padding-left: 1rem; border-left: 1px solid #2a2a2a; margin-left: 0.5rem;">
+            {% assign all_pubs_2024 = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
+            {% for pub in all_pubs_2024 %}
+              {% assign pub_year_2024 = pub.date | date: '%Y' | plus: 0 %}
+              {% assign pub_month_2024 = pub.date | date: '%m' | plus: 0 %}
+              {% if pub_year_2024 == 2024 and pub_month_2024 >= 1 and pub_month_2024 < 7 %}
+              {% if pub.title contains "Large content" or pub.title contains "Text-to-hand" %}
+              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+                  {{ pub.title }}
+                </h4>
+                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                  {{ pub.authors }}
                 </p>
-              {% elsif pub.venue %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
-              {% elsif pub.date %}
-                {% assign pub_month = pub.date | date: "%b" %}
-                <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month }} {{ pub.date | date: "%Y" }}</p>
+                {% if pub.venue and pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    {{ pub.venue }}, {{ pub_month_display }} {{ pub.date | date: "%Y" }}
+                  </p>
+                {% elsif pub.venue %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub.venue }}</p>
+                {% elsif pub.date %}
+                  {% assign pub_month_display = pub.date | date: "%b" %}
+                  <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">{{ pub_month_display }} {{ pub.date | date: "%Y" }}</p>
+                {% endif %}
+                {% if pub.link %}
+                <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+                  View on Google Scholar →
+                </a>
+                {% endif %}
+              </div>
               {% endif %}
-              {% if pub.link %}
-              <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                View on Google Scholar →
-              </a>
               {% endif %}
-            </div>
-            {% endif %}
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
       </div>
 
@@ -268,17 +270,49 @@ permalink: /news/
 }
 </style>
 
+<style>
+.timeline-dot:hover {
+  transform: scale(1.2);
+  background: #c4a8d8 !important;
+}
+
+.timeline-header:hover h3 {
+  color: #a8c5e0 !important;
+}
+
+.timeline-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
 <script>
 function togglePeriod(periodId) {
   const content = document.getElementById(periodId + '-content');
-  const icon = document.getElementById(periodId + '-icon');
+  const dot = event.target.closest('.timeline-period').querySelector('.timeline-dot');
   
-  if (content.style.display === 'none') {
+  if (content.style.display === 'none' || !content.style.display) {
     content.style.display = 'block';
-    icon.textContent = '▼';
+    if (dot) {
+      dot.style.background = '#c4a8d8';
+      dot.style.transform = 'scale(1.1)';
+    }
   } else {
     content.style.display = 'none';
-    icon.textContent = '▶';
+    if (dot) {
+      dot.style.background = '#a8c5e0';
+      dot.style.transform = 'scale(1)';
+    }
   }
 }
 

@@ -77,7 +77,7 @@ permalink: /about/
             <h3 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Masters</h3>
             <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.95rem;">University of Massachusetts, Amherst</p>
             <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Sep 2014 - Aug 2016</p>
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Graduate studies in Computer Science with a diverse curriculum covering computer systems and networks, machine learning and artificial intelligence, and theoretical foundations. Built foundational knowledge across systems, ML/AI, and theory courses.</p>
+            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Graduate studies in Computer Science covering fundamentals of computer science systems & network, Machine learning and theory.</p>
           </div>
         </div>
 
