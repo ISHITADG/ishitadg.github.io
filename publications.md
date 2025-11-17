@@ -18,7 +18,7 @@ permalink: /publications/
   </div>
 
   <div class="publications-list" style="display: grid; gap: 2rem;">
-    {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+    {% assign sorted_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
     {% for pub in sorted_pubs limit: 5 %}
     <div class="publication-card" style="background: #1a1a1a; padding: 2rem; border-radius: 4px; border: 1px solid #2a2a2a; display: grid; grid-template-columns: 200px 1fr; gap: 2rem; transition: border-color 0.3s;">
       
@@ -42,14 +42,12 @@ permalink: /publications/
       
       <!-- Publication Content -->
       <div class="publication-content" style="flex: 1;">
-        <h3 style="font-size: 1.3rem; color: #e8e8e8; margin-bottom: 0.8rem; font-weight: 400; line-height: 1.4;">
+        <h3 style="font-size: 1.3rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
           {{ pub.title }}
         </h3>
-        
-        <p style="color: #808080; margin-bottom: 0.8rem; line-height: 1.6; font-size: 0.95rem;">
+        <p style="color: #808080; margin-bottom: 0.4rem; line-height: 1.6; font-size: 0.95rem;">
           {{ pub.authors }}
         </p>
-        
         {% if pub.venue and pub.date %}
           {% assign pub_month = pub.date | date: "%b" %}
           <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 1rem; font-size: 0.95rem;">
