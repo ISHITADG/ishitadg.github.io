@@ -19,8 +19,8 @@ permalink: /contact/
     <div class="contact-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       <div class="contact-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">📧</div>
       <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Email</h3>
-      <a href="mailto:ishita.dasgupta@adobe.com" style="color: white; text-decoration: none; opacity: 0.9;">
-        ishita.dasgupta@adobe.com
+      <a href="mailto:ishita.dasgupta@gmail.com" style="color: white; text-decoration: none; opacity: 0.9;">
+        ishita.dasgupta@gmail.com
       </a>
     </div>
 

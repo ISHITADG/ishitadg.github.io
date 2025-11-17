@@ -34,7 +34,7 @@ remote_theme: alshedivat/al-folio@v0.9.0
 # Site author
 author:
   name: "Ishita Dasgupta"
-  email: "ishita.dasgupta@adobe.com"
+  email: "ishita.dasgupta@gmail.com"
   twitter: ""
   github: "ISHITADG"
   linkedin: ""
@@ -45,7 +45,7 @@ author:
 # Social links
 social:
   - icon: fa-envelope
-    link: mailto:ishita.dasgupta@adobe.com
+    link: mailto:ishita.dasgupta@gmail.com
   - icon: fa-github
     link: https://github.com/ISHITADG
   - icon: ai ai-google-scholar
@@ -61,8 +61,6 @@ navbar:
     link: "/news/"
   - name: "Publications"
     link: "/publications/"
-  - name: "Research"
-    link: "/research/"
   - name: "Contact"
     link: "/contact/"
 
