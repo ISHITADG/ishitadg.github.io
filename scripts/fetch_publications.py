@@ -170,6 +170,14 @@ def generate_markdown(pub, index):
         authors = re.sub(r'(\bIshita\s+Dasgupta\b|\bDasgupta,?\s+I\b)', r'**\1**', authors, flags=re.IGNORECASE)
     
     # Generate markdown content
+    # Use a default date if none available (Jekyll requires valid dates)
+    if pub['date']:
+        date_str = pub['date'].strftime('%Y-%m-%d')
+    elif pub['year']:
+        date_str = f"{pub['year']}-01-01"
+    else:
+        date_str = "2024-01-01"  # Default fallback
+    
     content = f"""---
 layout: publication
 title: "{pub['title']}"
@@ -178,7 +186,7 @@ venue: "{pub['venue']}"
 year: {pub['year'] or 'null'}
 citations: {pub['citations']}
 link: "{pub['link']}"
-date: {pub['date'].strftime('%Y-%m-%d') if pub['date'] else 'null'}
+date: {date_str}
 ---
 
 ## Abstract
