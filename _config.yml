@@ -1,0 +1,84 @@
+# Site Settings
+title: "Ishita Dasgupta"
+name: "Ishita Dasgupta"
+description: "Research Scientist | Computer Vision | Machine Learning | Adobe Research"
+url: "https://ISHITADG.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name
+  news:
+    output: true
+    permalink: /:collection/:name
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Theme settings
+remote_theme: alshedivat/al-folio@v0.9.0
+
+# Site author
+author:
+  name: "Ishita Dasgupta"
+  email: "ishita.dasgupta@adobe.com"
+  twitter: ""
+  github: "ISHITADG"
+  linkedin: ""
+  google_scholar: "okBrMn8AAAAJ"
+  orcid: ""
+  website: "https://ISHITADG.github.io"
+
+# Social links
+social:
+  - icon: fa-envelope
+    link: mailto:ishita.dasgupta@adobe.com
+  - icon: fa-github
+    link: https://github.com/ISHITADG
+  - icon: ai ai-google-scholar
+    link: https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ
+
+# Navigation
+navbar:
+  - name: "Home"
+    link: /
+  - name: "About"
+    link: /about/
+  - name: "News"
+    link: /news/
+  - name: "Publications"
+    link: /publications/
+  - name: "Research"
+    link: /research/
+  - name: "Contact"
+    link: /contact/
+
+# Footer
+footer:
+  copyright: "© 2025 Ishita Dasgupta"
+  powered_by: "Powered by Jekyll & al-folio"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - scripts
+  - README.md
+

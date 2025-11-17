@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Academic Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Navigation */
+    nav {
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+    }
+    
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #667eea;
+      text-decoration: none;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #667eea;
+    }
+    
+    /* Main Content */
+    main {
+      min-height: calc(100vh - 200px);
+      padding: 2rem 0;
+    }
+    
+    /* Footer */
+    footer {
+      background: #f8f9fa;
+      padding: 2rem 0;
+      margin-top: 4rem;
+      text-align: center;
+      color: #666;
+    }
+    
+    footer .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    footer .social-links a {
+      color: #667eea;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    
+    footer .social-links a:hover {
+      transform: translateY(-3px);
+    }
+    
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      nav .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  
+  {% seo %}
+</head>
+<body>
+  
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">{{ site.name }}</a>
+      <ul>
+        {% for item in site.navbar %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        {% for social in site.social %}
+        <a href="{{ social.link }}" target="_blank" aria-label="{{ social.icon }}">
+          <i class="{{ social.icon }}"></i>
+        </a>
+        {% endfor %}
+      </div>
+      <p>{{ site.footer.copyright }}</p>
+      <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ site.footer.powered_by }}</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
+

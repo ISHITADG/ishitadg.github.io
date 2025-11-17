@@ -1,0 +1,18 @@
+---
+layout: publication
+title: "SmartEdit: Editing-driven Engagement Prediction and Enhancement of Short-Videos"
+authors: "S Gupta, I Dasgupta, S Petrangeli, S Sarkhel"
+venue: ""
+year: null
+citations: 0
+link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:ufrVoPGSRksC"
+date: null
+---
+
+## Abstract
+
+[Abstract will be added manually or fetched from another source]
+
+## Links
+
+- [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:ufrVoPGSRksC)
