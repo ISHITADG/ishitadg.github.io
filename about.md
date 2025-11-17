@@ -18,7 +18,7 @@ permalink: /about/
     
     <div class="bio-section" style="margin-bottom: 3rem;">
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am a Research Scientist 2 at Adobe Research, working on data-driven multimodal understanding and generation, advanced planning in Multimodal Large Language Models (MLLMs), and intelligent agents with dynamic planning capabilities. My research focuses on developing systems that learn from data to optimize creative workflows, with applications in content creation and video understanding.
+        I am a Research Scientist 2 at Adobe Research, working on data-driven multimodal understanding and generation, advanced planning in Multimodal Large Language Models (MLLMs), and intelligent agents with dynamic planning capabilities. My research focuses on developing solutions that learn efficiently from data with applications in multimodal understanding and generation.
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
@@ -26,7 +26,11 @@ permalink: /about/
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am passionate about building data-driven systems that push the limits on reducing redundant work and enhancing creative workflows. Through my work on Multimodal Large Language Models (MLLMs) and intelligent agents with dynamic planning capabilities, I develop systems that learn from data to automate repetitive tasks and optimize content creation processes, enabling users to focus on higher-level creative decisions.
+        I am passionate about building intelligent systems that enhance human creativity and productivity.
+      </p>
+      
+      <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
+        In my free time, I like to document life through photos, videos, and paintings, and enjoy singing and dancing as my favorite movement hobbies.
       </p>
     </div>
 
