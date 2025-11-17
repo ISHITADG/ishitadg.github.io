@@ -69,6 +69,11 @@ permalink: /publications/
         {% endif %}
         
         <div class="publication-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          {% if pub.cvf %}
+          <a href="{{ pub.cvf }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+            CVF →
+          </a>
+          {% endif %}
           {% if pub.arxiv %}
           <a href="{{ pub.arxiv }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
             arXiv →
