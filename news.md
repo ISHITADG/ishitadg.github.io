@@ -36,11 +36,11 @@ permalink: /news/
               {% assign pub_month = pub.date | date: '%m' | plus: 0 %}
               {% if pub_year == 2025 and pub_month >= 7 and pub_month <= 12 %}
               {% unless pub.title contains "SmartEdit" %}
-              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+              <div class="timeline-item" style="background: #1a1a1a; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; border: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.4rem; font-weight: 400; line-height: 1.4;">
                   {{ pub.title }}
                 </h4>
-                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                <p style="color: #808080; margin-bottom: 0.3rem; font-size: 0.9rem; line-height: 1.5;">
                   {{ pub.authors }}
                 </p>
                 {% if pub.venue and pub.date %}
@@ -56,7 +56,7 @@ permalink: /news/
                 {% endif %}
                 {% if pub.link %}
                 <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                  View on Google Scholar →
+                  View Paper →
                 </a>
                 {% endif %}
               </div>
@@ -64,8 +64,8 @@ permalink: /news/
               {% endif %}
             {% endfor %}
             <!-- SVU Workshop -->
-            <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-              <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+            <div class="timeline-item" style="background: #1a1a1a; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; border: 1px solid #2a2a2a;">
+              <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.4rem; font-weight: 400; line-height: 1.4;">
                 SVU 2025 Workshop: The First Workshop on Short-Form Video Understanding
               </h4>
               <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">
@@ -90,11 +90,11 @@ permalink: /news/
             {% assign all_pubs_h1 = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
             {% for pub in all_pubs_h1 %}
               {% if pub.title contains "SmartEdit" %}
-              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+              <div class="timeline-item" style="background: #1a1a1a; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; border: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.4rem; font-weight: 400; line-height: 1.4;">
                   {{ pub.title }}
                 </h4>
-                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                <p style="color: #808080; margin-bottom: 0.3rem; font-size: 0.9rem; line-height: 1.5;">
                   {{ pub.authors }}
                 </p>
                 {% if pub.venue and pub.date %}
@@ -110,7 +110,7 @@ permalink: /news/
                 {% endif %}
                 {% if pub.link %}
                 <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                  View on Google Scholar →
+                  View Paper →
                 </a>
                 {% endif %}
               </div>
@@ -147,11 +147,11 @@ permalink: /news/
               {% assign pub_month_2024 = pub.date | date: '%m' | plus: 0 %}
               {% if pub_year_2024 == 2024 and pub_month_2024 >= 1 and pub_month_2024 < 7 %}
               {% if pub.title contains "Large content" or pub.title contains "Text-to-hand" %}
-              <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
-                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+              <div class="timeline-item" style="background: #1a1a1a; padding: 1.2rem; border-radius: 4px; margin-bottom: 1rem; border: 1px solid #2a2a2a;">
+                <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.4rem; font-weight: 400; line-height: 1.4;">
                   {{ pub.title }}
                 </h4>
-                <p style="color: #808080; margin-bottom: 0.4rem; font-size: 0.9rem; line-height: 1.5;">
+                <p style="color: #808080; margin-bottom: 0.3rem; font-size: 0.9rem; line-height: 1.5;">
                   {{ pub.authors }}
                 </p>
                 {% if pub.venue and pub.date %}
@@ -167,7 +167,7 @@ permalink: /news/
                 {% endif %}
                 {% if pub.link %}
                 <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
-                  View on Google Scholar →
+                  View Paper →
                 </a>
                 {% endif %}
               </div>
