@@ -11,8 +11,12 @@ permalink: /publications/
     <div class="divider" style="width: 100px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 0 auto;"></div>
     <p style="color: #666; margin-top: 1rem; font-size: 1.1rem;">
       All publications are automatically fetched from 
-      <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ" target="_blank" style="color: #667eea; text-decoration: none;">
+      <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">
         Google Scholar
+      </a>
+      <span style="margin: 0 10px;">|</span>
+      <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: #764ba2; text-decoration: none; font-weight: 600; padding: 8px 16px; background: #f8f9fa; border-radius: 5px; display: inline-block; margin-top: 10px;">
+        View All Publications on Google Scholar →
       </a>
     </p>
   </div>

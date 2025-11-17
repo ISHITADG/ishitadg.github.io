@@ -7,6 +7,9 @@ permalink: /about/
 <div class="about-container" style="max-width: 900px; margin: 0 auto; padding: 2rem 0;">
   
   <div class="about-header" style="text-align: center; margin-bottom: 3rem;">
+    <div class="profile-photo" style="margin-bottom: 2rem;">
+      <img src="{{ '/assets/img/i.jpg' | relative_url }}" alt="Ishita Dasgupta" style="width: 250px; height: 250px; border-radius: 50%; border: 5px solid #667eea; object-fit: cover; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
+    </div>
     <h1 style="font-size: 2.5rem; color: #333; margin-bottom: 1rem;">About Me</h1>
     <div class="divider" style="width: 100px; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 0 auto;"></div>
   </div>
@@ -15,7 +18,7 @@ permalink: /about/
     
     <div class="bio-section" style="margin-bottom: 3rem;">
       <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-        I am a Research Scientist at Adobe Research, where I work on cutting-edge problems in computer vision, machine learning, and video understanding. My research focuses on developing intelligent systems that can understand and interpret visual content, with particular emphasis on short-form videos and multimodal learning.
+        I am a Research Scientist 2 at Adobe Research, where I work on cutting-edge problems in computer vision, machine learning, and video understanding. My research focuses on developing intelligent systems that can understand and interpret visual content, with particular emphasis on short-form videos and multimodal learning.
       </p>
       
       <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
@@ -33,7 +36,7 @@ permalink: /about/
         <div class="timeline-item" style="position: relative; padding-bottom: 2rem; padding-left: 2rem; border-left: 2px solid #e0e0e0;">
           <div class="timeline-marker" style="position: absolute; left: -8px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: #667eea; border: 3px solid white; box-shadow: 0 0 0 2px #667eea;"></div>
           <div class="timeline-content">
-            <h3 style="font-size: 1.3rem; color: #333; margin-bottom: 0.5rem;">Research Scientist</h3>
+            <h3 style="font-size: 1.3rem; color: #333; margin-bottom: 0.5rem;">Research Scientist 2</h3>
             <p style="color: #764ba2; font-weight: 600; margin-bottom: 0.5rem;">Adobe Research</p>
             <p style="color: #666; margin-bottom: 0.5rem;">Present</p>
             <p style="color: #555;">Leading research initiatives in computer vision and video understanding, with focus on short-form video analysis and multimodal learning systems.</p>
