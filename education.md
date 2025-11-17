@@ -28,25 +28,19 @@ permalink: /education/
             <div>
               <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Systems & Networks</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS653: Computer Networking</li>
-                <li>CS677: Distributed and Operating Systems</li>
-                <li>CS630: Systems</li>
+                <li>E&C-ENG 671: Computer Networks</li>
               </ul>
             </div>
             <div>
               <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Machine Learning & AI</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS685: Advanced Machine Learning</li>
-                <li>CS682: Neural Networks: A Modern Introduction</li>
-                <li>CS683: Artificial Intelligence</li>
                 <li>CS689: Machine Learning</li>
               </ul>
             </div>
             <div>
-              <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Theory</p>
+              <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Other</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS601: Computation Theory I</li>
-                <li>CS611: Advanced Algorithms</li>
+                <li>CS590CC: Cloud Computing</li>
               </ul>
             </div>
           </div>
@@ -65,10 +59,7 @@ permalink: /education/
         <div style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border: 1px solid #2a2a2a; margin-bottom: 1rem;">
           <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400;">Teaching Assistant</h4>
           <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <strong style="color: #e8e8e8;">CS653: Computer Networking</strong> | Fall 2017, Spring 2018
-          </p>
-          <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-            <strong style="color: #e8e8e8;">CS677: Distributed and Operating Systems</strong> | Fall 2018
+            <strong style="color: #e8e8e8;">CS677: Operating Systems</strong> | Spring 2015
           </p>
           <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
             Assisted with course instruction, held office hours, graded assignments, and helped students understand complex concepts in computer networks and distributed systems.
@@ -107,25 +98,22 @@ permalink: /education/
             <div>
               <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Systems & Networks</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS453: Computer Networks</li>
-                <li>CS460: Distributed Systems</li>
-                <li>CS377: Operating Systems</li>
+                <li>CS677: Operating Systems</li>
               </ul>
             </div>
             <div>
               <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Machine Learning & AI</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS589: Machine Learning</li>
-                <li>CS383: Artificial Intelligence</li>
-                <li>CS585: Data Mining</li>
+                <li>CS585: Intro Natural Language Processing</li>
               </ul>
             </div>
             <div>
-              <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Theory</p>
+              <p style="color: #c4a8d8; font-weight: 400; font-size: 0.9rem; margin-bottom: 0.5rem;">Theory & Other</p>
               <ul style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-                <li>CS311: Algorithms</li>
-                <li>CS501: Computational Complexity</li>
-                <li>CS514: Graph Theory</li>
+                <li>CS611: Advanced Algorithms</li>
+                <li>CS646: Information Retrieval</li>
+                <li>CS621: Adv S/W Eng: Analysis and Eval</li>
+                <li>CS701: Advanced Topics Computer Science</li>
               </ul>
             </div>
           </div>
