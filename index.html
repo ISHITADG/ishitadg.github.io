@@ -63,15 +63,19 @@ layout: default
             <p style="color: #808080; margin-bottom: 0.6rem; line-height: 1.6; font-size: 0.9rem;">
               {{ pub.authors }}
             </p>
-            {% if pub.venue %}
-            <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.9rem;">
+            {% if pub.venue and pub.date %}
+              {% assign pub_month = pub.date | date: "%b" %}
+              <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 1rem; font-size: 0.9rem;">
+                {{ pub.venue }}, {{ pub_month }} {{ pub.date | date: "%Y" }}
+              </p>
+            {% elsif pub.venue %}
+            <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 1rem; font-size: 0.9rem;">
               {{ pub.venue }}
             </p>
-            {% endif %}
-            {% if pub.date %}
-              {% assign pub_date = pub.date | date: "%B %Y" %}
-              <p style="color: #808080; font-size: 0.85rem; margin-bottom: 1rem;">
-                {{ pub_date }}
+            {% elsif pub.date %}
+              {% assign pub_month = pub.date | date: "%b" %}
+              <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 1rem; font-size: 0.9rem;">
+                {{ pub_month }} {{ pub.date | date: "%Y" }}
               </p>
             {% elsif pub.year %}
             <p style="color: #808080; font-size: 0.85rem; margin-bottom: 1rem;">
