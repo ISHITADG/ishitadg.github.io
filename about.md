@@ -26,11 +26,11 @@ permalink: /about/
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am passionate about building intelligent systems that enhance human creativity and productivity.
+        I am passionate about building intelligent systems that enhance human productivity in creativity.
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        In my free time, I like to document life through photos, videos, and paintings, enjoy a little bit of movement via singing & dancing, and a little bit of tinkering through strategy games once in a while. thats it.
+        In my free time, I explore creativity through capturing photos, videos, and paintings, stay expressive with music and dance, and keep my brain entertained with strategy games.
       </p>
     </div>
 
