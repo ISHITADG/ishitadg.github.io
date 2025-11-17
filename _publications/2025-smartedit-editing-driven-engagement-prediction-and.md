@@ -2,11 +2,11 @@
 layout: publication
 title: "SmartEdit: Editing-driven Engagement Prediction and Enhancement of Short-Videos"
 authors: "S Gupta, I Dasgupta, S Petrangeli, S Sarkhel"
-venue: ""
-year: null
+venue: "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+year: 2025
 citations: 0
 link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:ufrVoPGSRksC"
-date: 2024-01-01
+date: 2025-01-01
 ---
 
 ## Abstract

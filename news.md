@@ -33,8 +33,13 @@ permalink: /news/
           {{ pub.venue }}
         </p>
         {% endif %}
-        {% if pub.year %}
-        <p style="color: #666; font-size: 0.85rem; margin-bottom: 1rem;">
+        {% if pub.date %}
+          {% assign pub_date = pub.date | date: "%B %Y" %}
+          <p style="color: #808080; font-size: 0.85rem; margin-bottom: 1rem;">
+            {{ pub_date }}
+          </p>
+        {% elsif pub.year %}
+        <p style="color: #808080; font-size: 0.85rem; margin-bottom: 1rem;">
           {{ pub.year }}
         </p>
         {% endif %}
