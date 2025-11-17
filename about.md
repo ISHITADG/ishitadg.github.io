@@ -30,7 +30,7 @@ permalink: /about/
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        In my free time, I like to document life through photos, videos, and paintings, and enjoy singing and dancing as my favorite movement hobbies.
+        In my free time, I like to document life through photos, videos, and paintings, enjoy singing and dancing as my favorite movement hobbies, and play strategy games that challenge tactical thinking.
       </p>
     </div>
 
