@@ -54,17 +54,17 @@ social:
 # Navigation
 navbar:
   - name: "Home"
-    link: /
+    link: {{ site.baseurl }}/
   - name: "About"
-    link: /about/
+    link: {{ site.baseurl }}/about/
   - name: "News"
-    link: /news/
+    link: {{ site.baseurl }}/news/
   - name: "Publications"
-    link: /publications/
+    link: {{ site.baseurl }}/publications/
   - name: "Research"
-    link: /research/
+    link: {{ site.baseurl }}/research/
   - name: "Contact"
-    link: /contact/
+    link: {{ site.baseurl }}/contact/
 
 # Footer
 footer:

@@ -18,81 +18,170 @@ layout: default
       Exploring the frontiers of computer vision, machine learning, and short-form video understanding
     </p>
     <div class="hero-buttons" style="animation: fadeInUp 1.4s ease-out;">
-      <a href="/publications/" class="btn btn-light" style="margin: 0 10px; padding: 12px 30px; border-radius: 30px; text-decoration: none; display: inline-block; background: white; color: #667eea; font-weight: 600; transition: transform 0.3s;">
+      <a href="{{ '/publications/' | relative_url }}" class="btn btn-light" style="margin: 0 10px; padding: 12px 30px; border-radius: 30px; text-decoration: none; display: inline-block; background: white; color: #667eea; font-weight: 600; transition: transform 0.3s;">
         View Publications
       </a>
-      <a href="/about/" class="btn btn-outline-light" style="margin: 0 10px; padding: 12px 30px; border-radius: 30px; text-decoration: none; display: inline-block; border: 2px solid white; color: white; font-weight: 600; transition: transform 0.3s;">
+      <a href="{{ '/about/' | relative_url }}" class="btn btn-outline-light" style="margin: 0 10px; padding: 12px 30px; border-radius: 30px; text-decoration: none; display: inline-block; border: 2px solid white; color: white; font-weight: 600; transition: transform 0.3s;">
         Learn More
       </a>
     </div>
   </div>
 </section>
 
-<!-- Latest News Section -->
-<section class="latest-news" style="padding: 80px 0; background: #f8f9fa;">
-  <div class="container">
+<!-- Latest Highlights Section with Tabs -->
+<section class="highlights-section" style="padding: 80px 0; background: white;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <h2 class="section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #333;">
-      Latest News
+      Latest Highlights
     </h2>
-    <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-      
-      <!-- Recent Publications Card -->
-      <div class="news-card" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-        <div class="news-icon" style="font-size: 2.5rem; margin-bottom: 1rem; color: #667eea;">
-          📄
-        </div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #333;">Recent Publications</h3>
-        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-          Check out my latest research papers published in the last 3 months, covering advances in computer vision and machine learning.
-        </p>
-        <a href="/news/#publications" style="color: #667eea; text-decoration: none; font-weight: 600;">
-          View Recent Papers →
-        </a>
-      </div>
-
-      <!-- Workshop Card -->
-      <div class="news-card" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-        <div class="news-icon" style="font-size: 2.5rem; margin-bottom: 1rem; color: #764ba2;">
-          🎓
-        </div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #333;">SVU 2025 Workshop</h3>
-        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-          Co-organizing the First Workshop on Short-Form Video Understanding at ICCV 2025. Exploring the next frontier in video intelligence.
-        </p>
-        <a href="https://short-form-video-understanding.github.io/" target="_blank" style="color: #764ba2; text-decoration: none; font-weight: 600;">
-          Visit Workshop →
-        </a>
-      </div>
-
-      <!-- Research Highlights Card -->
-      <div class="news-card" style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-        <div class="news-icon" style="font-size: 2.5rem; margin-bottom: 1rem; color: #f093fb;">
-          🔬
-        </div>
-        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #333;">Research Focus</h3>
-        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-          Working on cutting-edge problems in video understanding, multimodal learning, and AI systems at Adobe Research.
-        </p>
-        <a href="/research/" style="color: #f093fb; text-decoration: none; font-weight: 600;">
-          Explore Research →
-        </a>
-      </div>
-
+    
+    <!-- Tab Navigation -->
+    <div class="tabs-nav" style="display: flex; justify-content: center; gap: 0; margin-bottom: 2rem; border-bottom: 2px solid #e0e0e0; flex-wrap: wrap;">
+      <button class="tab-btn active" onclick="showTab('publications')" style="padding: 15px 30px; background: none; border: none; border-bottom: 3px solid #667eea; color: #667eea; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;">
+        Recent Publications
+      </button>
+      <button class="tab-btn" onclick="showTab('workshop')" style="padding: 15px 30px; background: none; border: none; border-bottom: 3px solid transparent; color: #666; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;">
+        SVU 2025 Workshop
+      </button>
+      <button class="tab-btn" onclick="showTab('research')" style="padding: 15px 30px; background: none; border: none; border-bottom: 3px solid transparent; color: #666; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s;">
+        Research Focus
+      </button>
     </div>
-  </div>
-</section>
 
-<!-- Featured Publications Section -->
-<section class="featured-publications" style="padding: 80px 0; background: white;">
-  <div class="container">
-    <h2 class="section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #333;">
-      Featured Publications
-    </h2>
-    <div class="publications-list" id="featured-pubs">
-      <!-- Publications will be dynamically loaded here -->
-      <p style="text-align: center; color: #666; font-style: italic;">
-        Loading publications from Google Scholar...
-      </p>
+    <!-- Tab Content -->
+    <div class="tabs-content">
+      
+      <!-- Recent Publications Tab -->
+      <div id="tab-publications" class="tab-content active" style="display: block;">
+        <div class="publications-list" style="display: grid; gap: 2rem;">
+          {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+          {% for pub in sorted_pubs limit: 3 %}
+          <div class="publication-card" style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #667eea; transition: transform 0.3s, box-shadow 0.3s;">
+            <h3 style="font-size: 1.3rem; color: #333; margin-bottom: 0.8rem; font-weight: 600;">
+              {{ pub.title }}
+            </h3>
+            <p style="color: #666; margin-bottom: 0.8rem; line-height: 1.6; font-size: 0.95rem;">
+              {{ pub.authors }}
+            </p>
+            {% if pub.venue %}
+            <p style="color: #764ba2; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem;">
+              {{ pub.venue }}
+            </p>
+            {% endif %}
+            {% if pub.year %}
+            <p style="color: #999; font-size: 0.9rem; margin-bottom: 1rem;">
+              Published: {{ pub.year }}
+            </p>
+            {% endif %}
+            {% if pub.link %}
+            <a href="{{ pub.link }}" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+              View on Google Scholar →
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+          
+          {% if sorted_pubs.size == 0 %}
+          <div style="text-align: center; padding: 3rem; color: #666;">
+            <p>Publications are being loaded...</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem;">
+              <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: #667eea; text-decoration: none;">
+                View all publications on Google Scholar →
+              </a>
+            </p>
+          </div>
+          {% endif %}
+          
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="{{ '/publications/' | relative_url }}" style="display: inline-block; padding: 12px 30px; background: #667eea; color: white; text-decoration: none; border-radius: 30px; font-weight: 600; transition: transform 0.3s;">
+              View All Publications
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVU Workshop Tab -->
+      <div id="tab-workshop" class="tab-content" style="display: none;">
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem; border-radius: 16px; color: white; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">SVU 2025 Workshop</h3>
+            <p style="opacity: 0.95; font-size: 1.1rem;">The First Workshop on Short-Form Video Understanding</p>
+          </div>
+          
+          <div style="background: rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+            <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">Workshop Highlights</h4>
+            <ul style="list-style: none; padding: 0; line-height: 2; font-size: 1.05rem;">
+              <li style="margin-bottom: 1rem;">• <strong>Exploring New Frontiers:</strong> This workshop brings together researchers working on understanding short-form videos, which represent 90% of internet traffic and have 2.5x higher engagement than longer videos.</li>
+              <li style="margin-bottom: 1rem;">• <strong>Key Topics:</strong> SV data collection and benchmarking, analysis and understanding techniques, detection of looped narratives and juxtaposed videos, and evaluation of engagement factors.</li>
+              <li style="margin-bottom: 1rem;">• <strong>ICCV 2025:</strong> Co-organizing this workshop at one of the premier computer vision conferences, featuring invited talks from leading researchers and accepted papers on cutting-edge short-form video understanding.</li>
+            </ul>
+          </div>
+          
+          <div style="background: rgba(255, 255, 255, 0.15); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+            <p style="margin-bottom: 0.8rem; line-height: 1.6;">
+              <strong>Venue:</strong> ICCV 2025, Room 313B, Hawai'i Convention Center
+            </p>
+            <p style="margin-bottom: 0.8rem; line-height: 1.6;">
+              <strong>Date:</strong> October 19, 2025, 1 PM - 5 PM HST, Honolulu, Hawai'i, USA
+            </p>
+          </div>
+          
+          <div style="text-align: center;">
+            <a href="https://short-form-video-understanding.github.io/" target="_blank" 
+               style="display: inline-block; padding: 12px 30px; background: white; color: #667eea; text-decoration: none; border-radius: 8px; font-weight: 600; margin-right: 10px; transition: transform 0.3s;">
+              Visit Workshop Website →
+            </a>
+            <a href="https://short-form-video-understanding.github.io/#submission" target="_blank"
+               style="display: inline-block; padding: 12px 30px; background: rgba(255, 255, 255, 0.2); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; border: 2px solid white; transition: transform 0.3s;">
+              Submission Guidelines →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Focus Tab -->
+      <div id="tab-research" class="tab-content" style="display: none;">
+        <div style="display: grid; gap: 2rem;">
+          
+          <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 2.5rem; border-radius: 16px; color: white; box-shadow: 0 8px 20px rgba(240, 147, 251, 0.3);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Short-Form Video Understanding</h3>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem; margin-bottom: 1rem;">
+              My recent work focuses on understanding and analyzing short-form videos, which are characterized by unique editing techniques, narrative structures, and engagement patterns. Through papers like "SmartEdit" and "SKALD", I explore how AI systems can detect and understand editing-driven engagement factors, shot assembly patterns, and coherent multi-shot video creation.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem;">
+              This research directly informs the SVU 2025 workshop, where we're establishing benchmarks and exploring novel methods for understanding this rapidly growing class of visual content.
+            </p>
+          </div>
+
+          <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 2.5rem; border-radius: 16px; color: white; box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Multimodal Learning & Visual Storytelling</h3>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem; margin-bottom: 1rem;">
+              Through "VISIAR", I work on empowering Multimodal Large Language Models (MLLMs) for visual story ideation, exploring how vision and language can be integrated to create compelling narratives. This research bridges the gap between understanding visual content and generating creative, engaging stories.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem;">
+              The focus is on developing systems that can understand the creative intent behind visual media and assist in storytelling workflows, particularly for short-form video content.
+            </p>
+          </div>
+
+          <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 2.5rem; border-radius: 16px; color: white; box-shadow: 0 8px 20px rgba(67, 233, 123, 0.3);">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI Systems for Creative Applications</h3>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem; margin-bottom: 1rem;">
+              My research spans from fundamental computer vision problems to practical applications in creative tools. I develop intelligent systems that can understand user intent, predict engagement, and provide meaningful assistance in video editing and content creation workflows.
+            </p>
+            <p style="line-height: 1.8; opacity: 0.95; font-size: 1.05rem;">
+              This work is particularly relevant for platforms where creators need tools that understand the nuances of modern video content, from editing techniques to narrative structures that drive viewer engagement.
+            </p>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="{{ '/research/' | relative_url }}" style="display: inline-block; padding: 12px 30px; background: #667eea; color: white; text-decoration: none; border-radius: 30px; font-weight: 600; transition: transform 0.3s;">
+              Explore More Research
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -109,12 +198,26 @@ layout: default
   }
 }
 
-.news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+.tab-btn:hover {
+  color: #667eea !important;
+  border-bottom-color: #667eea !important;
+}
+
+.tab-btn.active {
+  color: #667eea !important;
+  border-bottom-color: #667eea !important;
+}
+
+.publication-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .btn:hover {
+  transform: translateY(-2px);
+}
+
+.tabs-content a:hover {
   transform: translateY(-2px);
 }
 
@@ -125,9 +228,39 @@ layout: default
   .hero-subtitle {
     font-size: 1.2rem !important;
   }
-  .news-grid {
-    grid-template-columns: 1fr !important;
+  .tabs-nav {
+    flex-direction: column;
+  }
+  .tab-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 </style>
 
+<script>
+function showTab(tabName) {
+  // Hide all tab contents
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => {
+    content.style.display = 'none';
+  });
+  
+  // Remove active class from all buttons
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => {
+    btn.classList.remove('active');
+    btn.style.borderBottomColor = 'transparent';
+    btn.style.color = '#666';
+  });
+  
+  // Show selected tab content
+  document.getElementById('tab-' + tabName).style.display = 'block';
+  
+  // Add active class to clicked button
+  const activeBtn = event.target;
+  activeBtn.classList.add('active');
+  activeBtn.style.borderBottomColor = '#667eea';
+  activeBtn.style.color = '#667eea';
+}
+</script>
