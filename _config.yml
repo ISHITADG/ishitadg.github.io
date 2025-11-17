@@ -59,7 +59,7 @@ navbar:
     link: "/about/"
   - name: "News"
     link: "/news/"
-  - name: "Publications"
+  - name: "Research"
     link: "/publications/"
   - name: "Education"
     link: "/education/"

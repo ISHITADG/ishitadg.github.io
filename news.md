@@ -221,13 +221,12 @@ permalink: /news/
   <!-- Other News Section -->
   <section id="other-news" class="news-section">
     <h2 style="font-size: 1.8rem; color: #e8e8e8; margin-bottom: 2rem; border-left: 2px solid #d4b5b5; padding-left: 1rem; font-weight: 400;">
-      Other Updates
+      Upcoming/Past Talks
     </h2>
     
     <div class="updates-list">
       <div class="update-item" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; margin-bottom: 1rem; border-left: 2px solid #a8c5e0; border: 1px solid #2a2a2a;">
-        <p style="color: #808080; font-size: 0.9rem; margin-bottom: 0.5rem;">Stay tuned for more updates!</p>
-        <p style="color: #b0b0b0;">This section will be updated with recent achievements, conference presentations, and other professional activities.</p>
+        <p style="color: #b0b0b0;">Watch this space for upcoming or past talks.</p>
       </div>
     </div>
   </section>

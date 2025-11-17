@@ -1,17 +1,23 @@
 ---
 layout: page
-title: Publications
+title: Research
 permalink: /publications/
 ---
 
 <div class="publications-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem 0;">
   
   <div class="publications-header" style="text-align: center; margin-bottom: 3rem;">
-    <h1 style="font-size: 2.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px;">Publications</h1>
+    <h1 style="font-size: 2.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px;">Research</h1>
     <div class="divider" style="width: 60px; height: 1px; background: #a8c5e0; margin: 0 auto;"></div>
   </div>
 
-  <div class="publications-list" style="display: grid; gap: 2rem;">
+  <!-- Publications Section -->
+  <section id="publications-section" style="margin-bottom: 4rem;">
+    <h2 style="font-size: 1.8rem; color: #e8e8e8; margin-bottom: 2rem; border-left: 2px solid #a8c5e0; padding-left: 1rem; font-weight: 400;">
+      Publications
+    </h2>
+
+    <div class="publications-list" style="display: grid; gap: 2rem;">
     {% assign sorted_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
     {% for pub in sorted_pubs limit: 5 %}
     <div class="publication-card" style="background: #1a1a1a; padding: 2rem; border-radius: 4px; border: 1px solid #2a2a2a; display: grid; grid-template-columns: 200px 1fr; gap: 2rem; transition: border-color 0.3s;">
@@ -110,6 +116,36 @@ permalink: /publications/
       </a>
     </div>
   </div>
+  </section>
+
+  <!-- Patents Section -->
+  <section id="patents-section">
+    <h2 style="font-size: 1.8rem; color: #e8e8e8; margin-bottom: 2rem; border-left: 2px solid #c4a8d8; padding-left: 1rem; font-weight: 400;">
+      Patents
+    </h2>
+    
+    <div class="patents-list" style="display: grid; gap: 2rem;">
+      <div class="patent-card" style="background: #1a1a1a; padding: 2rem; border-radius: 4px; border: 1px solid #2a2a2a; transition: border-color 0.3s;">
+        <h3 style="font-size: 1.3rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
+          Enhancing artificial intelligence responses with contextual usage insights
+        </h3>
+        <p style="color: #808080; margin-bottom: 0.4rem; line-height: 1.6; font-size: 0.95rem;">
+          Akash Vivek Maharaj, Vaishnavi Muppala, Shivakumar Vaithyanathan, Manas Garg, Kenneth George Russell, <strong style="color: #e8e8e8;">Ishita Dasgupta</strong>, Anup Bandigadi Rao, Aleksander Pejcic
+        </p>
+        <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 1rem; font-size: 0.95rem;">
+          US20250315460A1, Filed: Apr 2024, Published: Oct 2025
+        </p>
+        <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.9rem; margin-bottom: 1rem;">
+          A system and method for enhancing AI assistant responses with contextual usage insights. The system determines whether to add contextual usage data to responses generated from application documentation, providing relevant context about how applications are being used.
+        </p>
+        <div class="patent-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://patents.google.com/patent/US20250315460A1/en" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+            View Patent →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
 
