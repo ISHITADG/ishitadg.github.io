@@ -18,7 +18,7 @@ permalink: /about/
     
     <div class="bio-section" style="margin-bottom: 3rem;">
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am a Research Scientist 2 at Adobe Research, where I work on cutting-edge problems in computer vision, machine learning, and data-driven workflows. At Adobe, I am currently focused on training models to understand data and using those insights to close the loop in data-driven workflows, currently applied to videos in content creation workflows.
+        I am a Research Scientist 2 at Adobe Research, working on data-driven multimodal understanding and generation, advanced planning in Multimodal Large Language Models (MLLMs), and intelligent agents with dynamic planning capabilities. My research focuses on developing systems that learn from data to optimize creative workflows, with applications in content creation and video understanding.
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
@@ -26,7 +26,7 @@ permalink: /about/
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am passionate about advancing the state-of-the-art in data-driven intelligence and creative AI systems, exploring how models can learn from data to optimize creative workflows and assist users in content creation. My work spans from fundamental research in machine learning to practical applications in creative tools, with a focus on closing the loop between data insights and workflow optimization.
+        I am passionate about building data-driven systems that push the limits on reducing redundant work and enhancing creative workflows. Through my work on Multimodal Large Language Models (MLLMs) and intelligent agents with dynamic planning capabilities, I develop systems that learn from data to automate repetitive tasks and optimize content creation processes, enabling users to focus on higher-level creative decisions.
       </p>
     </div>
 
