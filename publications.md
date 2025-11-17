@@ -24,7 +24,9 @@ permalink: /publications/
       
       <!-- Publication Image -->
       <div class="publication-image" style="width: 200px; height: 200px; border-radius: 4px; overflow: hidden; background: #0f0f0f; display: flex; align-items: center; justify-content: center;">
-        {% if pub.doi %}
+        {% if pub.image %}
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+        {% elsif pub.doi %}
           <img src="https://api.altmetric.com/v1/doi/{{ pub.doi }}/images/medium" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem;\'>No image available</div>';">
         {% elsif pub.link %}
           {% assign scholar_id = pub.link | split: 'citation_for_view=' | last | split: ':' | first %}
@@ -67,6 +69,11 @@ permalink: /publications/
         {% endif %}
         
         <div class="publication-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          {% if pub.arxiv %}
+          <a href="{{ pub.arxiv }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
+            arXiv →
+          </a>
+          {% endif %}
           {% if pub.link %}
           <a href="{{ pub.link }}" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: border-color 0.3s;">
             Google Scholar →
