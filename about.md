@@ -18,7 +18,7 @@ permalink: /about/
     
     <div class="bio-section" style="margin-bottom: 3rem;">
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am a Research Scientist 2 at Adobe Research, where I work on cutting-edge problems in computer vision, machine learning, and video understanding. At Adobe, I am currently focused on data-driven intelligence and intelligent agents in creative content workflows. Particularly, I am deeply interested in optimizing or improving creative workflows for Adobe customers and users.
+        I am a Research Scientist 2 at Adobe Research, where I work on cutting-edge problems in computer vision, machine learning, and data-driven workflows. At Adobe, I am currently focused on training models to understand data and using those insights to close the loop in data-driven workflows, currently applied to videos in content creation workflows.
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
@@ -26,7 +26,7 @@ permalink: /about/
       </p>
       
       <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; color: #b0b0b0;">
-        I am passionate about advancing the state-of-the-art in video intelligence and creative AI systems, exploring how AI can better understand visual content and assist users in their creative workflows. My work spans from fundamental research in computer vision to practical applications in creative tools and media understanding.
+        I am passionate about advancing the state-of-the-art in data-driven intelligence and creative AI systems, exploring how models can learn from data to optimize creative workflows and assist users in content creation. My work spans from fundamental research in machine learning to practical applications in creative tools, with a focus on closing the loop between data insights and workflow optimization.
       </p>
     </div>
 
@@ -72,8 +72,8 @@ permalink: /about/
         </div>
         
         <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #c4a8d8; border: 1px solid #2a2a2a;">
-          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Video Understanding</h3>
-          <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Short-form video analysis, action recognition, and temporal modeling</p>
+          <h3 style="font-size: 1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Data-Driven Workflows</h3>
+          <p style="color: #808080; font-size: 0.9rem; line-height: 1.6;">Training models to understand data and closing the loop in content creation workflows</p>
         </div>
         
         <div class="interest-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #d4b5b5; border: 1px solid #2a2a2a;">
