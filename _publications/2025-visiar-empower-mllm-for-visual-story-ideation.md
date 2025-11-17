@@ -5,7 +5,7 @@ authors: "Z Xia, S Sarkhel, M Tanjim, S Petrangeli, I Dasgupta, Y Chen, J Xu, D 
 venue: "ACL Findings 2025"
 year: 2025
 citations: 0
-link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:WF5omc3nYNoC"
+link: "https://aclanthology.org/2025.findings-acl.945/"
 image: "/assets/img/visiar1.png"
 date: 2025-08-01
 ---
@@ -16,9 +16,13 @@ Ideation, the process of forming ideas from concepts, is a big part of the conte
 
 ## Figures
 
-![VISIAR Framework Overview](/assets/img/visiar1.png)
+<a href="{{ '/assets/img/visiar1.png' | relative_url }}" target="_blank" style="display: block; margin: 1rem 0;">
+  <img src="{{ '/assets/img/visiar1.png' | relative_url }}" alt="VISIAR Framework Overview" style="width: 100%; max-width: 900px; height: auto; border-radius: 4px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</a>
 
-![User Study Results](/assets/img/visiar2.png)
+<a href="{{ '/assets/img/visiar2.png' | relative_url }}" target="_blank" style="display: block; margin: 1rem 0;">
+  <img src="{{ '/assets/img/visiar2.png' | relative_url }}" alt="User Study Results" style="width: 100%; max-width: 900px; height: auto; border-radius: 4px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</a>
 
 ## Links
 

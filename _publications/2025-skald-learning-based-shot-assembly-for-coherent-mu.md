@@ -15,8 +15,11 @@ We present SKALD, a multi-shot video assembly method that constructs coherent vi
 
 ## Figures
 
-![SKALD Framework Overview](/assets/img/skald-learning-based-shot-assembly.png)
+<a href="{{ '/assets/img/skald-learning-based-shot-assembly.png' | relative_url }}" target="_blank" style="display: block; margin: 1rem 0;">
+  <img src="{{ '/assets/img/skald-learning-based-shot-assembly.png' | relative_url }}" alt="SKALD Framework Overview" style="width: 100%; max-width: 900px; height: auto; border-radius: 4px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</a>
 
 ## Links
 
-- [ICCV 2025](https://openaccess.thecvf.com/content/ICCV2025/html/Lu_SKALD_Learning-Based_Shot_Assembly_for_Coherent_Multi-Shot_Video_Creation_ICCV_2025_paper.html)
+- [ICCV 2025 (CVF)](https://openaccess.thecvf.com/content/ICCV2025/html/Lu_SKALD_Learning-Based_Shot_Assembly_for_Coherent_Multi-Shot_Video_Creation_ICCV_2025_paper.html)
+- [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=okBrMn8AAAAJ&sortby=pubdate&citation_for_view=okBrMn8AAAAJ:W7OEmFMy1HYC)
