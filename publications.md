@@ -25,18 +25,25 @@ permalink: /publications/
       <!-- Publication Image -->
       <div class="publication-image" style="width: 200px; height: 200px; border-radius: 4px; overflow: hidden; background: #0f0f0f; display: flex; align-items: center; justify-content: center;">
         {% if pub.image %}
-          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+          <a href="{{ pub.url | relative_url }}" style="display: block; width: 100%; height: 100%; cursor: pointer;">
+            <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          </a>
         {% elsif pub.doi %}
-          <img src="https://api.altmetric.com/v1/doi/{{ pub.doi }}/images/medium" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem;\'>No image available</div>';">
+          <a href="{{ pub.url | relative_url }}" style="display: block; width: 100%; height: 100%; cursor: pointer;">
+            <img src="https://api.altmetric.com/v1/doi/{{ pub.doi }}/images/medium" alt="{{ pub.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s;" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem;\'>No image available</div>';" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          </a>
         {% elsif pub.link %}
-          {% assign scholar_id = pub.link | split: 'citation_for_view=' | last | split: ':' | first %}
-          <div style="color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem; display: flex; align-items: center; justify-content: center; height: 100%;">
-            <span style="opacity: 0.5;">📄</span>
-          </div>
+          <a href="{{ pub.url | relative_url }}" style="display: block; width: 100%; height: 100%; cursor: pointer; text-decoration: none;">
+            <div style="color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem; display: flex; align-items: center; justify-content: center; height: 100%; transition: color 0.3s;" onmouseover="this.style.color='#a8c5e0'" onmouseout="this.style.color='#808080'">
+              <span style="opacity: 0.5;">📄</span>
+            </div>
+          </a>
         {% else %}
-          <div style="color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem; display: flex; align-items: center; justify-content: center; height: 100%;">
-            <span style="opacity: 0.5;">📄</span>
-          </div>
+          <a href="{{ pub.url | relative_url }}" style="display: block; width: 100%; height: 100%; cursor: pointer; text-decoration: none;">
+            <div style="color: #808080; font-size: 0.9rem; text-align: center; padding: 1rem; display: flex; align-items: center; justify-content: center; height: 100%; transition: color 0.3s;" onmouseover="this.style.color='#a8c5e0'" onmouseout="this.style.color='#808080'">
+              <span style="opacity: 0.5;">📄</span>
+            </div>
+          </a>
         {% endif %}
       </div>
       

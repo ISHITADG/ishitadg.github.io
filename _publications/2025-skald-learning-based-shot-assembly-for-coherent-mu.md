@@ -6,6 +6,7 @@ venue: "ICCV 2025"
 year: 2025
 citations: 0
 link: "https://openaccess.thecvf.com/content/ICCV2025/html/Lu_SKALD_Learning-Based_Shot_Assembly_for_Coherent_Multi-Shot_Video_Creation_ICCV_2025_paper.html"
+image: "/assets/img/skald-learning-based-shot-assembly.png"
 date: 2025-10-01
 ---
 
