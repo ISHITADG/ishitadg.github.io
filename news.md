@@ -28,8 +28,10 @@ permalink: /news/
           <span class="toggle-icon" id="h2-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h2-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h2_2025_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2025' and pub.date | date: '%m' | plus: 0 >= 7" | sort: 'date' | reverse %}
-          {% for pub in h2_2025_pubs %}
+          {% assign all_2025_pubs = site.publications | where_exp: "pub", "pub.date != nil" | where_exp: "pub", "pub.date | date: '%Y' == '2025'" | sort: 'date' | reverse %}
+          {% for pub in all_2025_pubs %}
+            {% assign pub_month = pub.date | date: '%m' | plus: 0 %}
+            {% if pub_month >= 7 and pub_month <= 12 %}
             {% unless pub.title contains "SmartEdit" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
               <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
@@ -56,6 +58,7 @@ permalink: /news/
               {% endif %}
             </div>
             {% endunless %}
+            {% endif %}
           {% endfor %}
           <!-- SVU Workshop -->
           <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
@@ -80,8 +83,10 @@ permalink: /news/
           <span class="toggle-icon" id="h1-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h1-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h1_2025_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2025' and pub.date | date: '%m' | plus: 0 < 7" | sort: 'date' | reverse %}
-          {% for pub in h1_2025_pubs %}
+          {% assign all_2025_pubs_h1 = site.publications | where_exp: "pub", "pub.date != nil" | where_exp: "pub", "pub.date | date: '%Y' == '2025'" | sort: 'date' | reverse %}
+          {% for pub in all_2025_pubs_h1 %}
+            {% assign pub_month_h1 = pub.date | date: '%m' | plus: 0 %}
+            {% if pub_month_h1 >= 1 and pub_month_h1 < 7 %}
             {% if pub.title contains "SmartEdit" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
               <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
@@ -108,6 +113,7 @@ permalink: /news/
               {% endif %}
             </div>
             {% endif %}
+            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -132,8 +138,10 @@ permalink: /news/
           <span class="toggle-icon" id="h1-2024-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h1-2024-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h1_2024_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2024' and pub.date | date: '%m' | plus: 0 < 7" | sort: 'date' | reverse %}
-          {% for pub in h1_2024_pubs %}
+          {% assign all_2024_pubs = site.publications | where_exp: "pub", "pub.date != nil" | where_exp: "pub", "pub.date | date: '%Y' == '2024'" | sort: 'date' | reverse %}
+          {% for pub in all_2024_pubs %}
+            {% assign pub_month_2024 = pub.date | date: '%m' | plus: 0 %}
+            {% if pub_month_2024 >= 1 and pub_month_2024 < 7 %}
             {% if pub.title contains "Large content" or pub.title contains "Text-to-hand" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
               <h4 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.4;">
@@ -159,6 +167,7 @@ permalink: /news/
               </a>
               {% endif %}
             </div>
+            {% endif %}
             {% endif %}
           {% endfor %}
         </div>
