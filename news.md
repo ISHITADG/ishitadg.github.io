@@ -49,7 +49,7 @@ permalink: /news/
           <strong>Date:</strong> October 19, 2025, 1 PM - 5 PM HST, Honolulu, Hawai'i, USA
         </p>
         <p style="line-height: 1.6; margin-bottom: 1.5rem;">
-          I am co-organizing this workshop alongside colleagues from Adobe Research and other institutions. The workshop explores the challenges and opportunities in understanding short-form videos, which are becoming increasingly embedded in our daily lives as sources of entertainment, information, and communication.
+          I recently co-organized this workshop alongside colleagues from Adobe Research and other institutions in October 2025. The workshop explored the challenges and opportunities in understanding short-form videos, which are becoming increasingly embedded in our daily lives as sources of entertainment, information, and communication.
         </p>
       </div>
       

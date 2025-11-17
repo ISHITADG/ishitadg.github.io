@@ -70,7 +70,7 @@ permalink: /research/
       <div class="project-item" style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid #667eea;">
         <h3 style="font-size: 1.3rem; color: #333; margin-bottom: 0.5rem;">SVU 2025 Workshop</h3>
         <p style="color: #666; margin-bottom: 1rem;">
-          Co-organizing the First Workshop on Short-Form Video Understanding at ICCV 2025. This workshop brings together researchers working on understanding short-form videos, exploring challenges in data collection, benchmarking, analysis, and novel research frontiers.
+          Recently co-organized the First Workshop on Short-Form Video Understanding at ICCV 2025 in October 2025. This workshop brought together researchers working on understanding short-form videos, exploring challenges in data collection, benchmarking, analysis, and novel research frontiers.
         </p>
         <a href="https://short-form-video-understanding.github.io/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">
           Learn more →
