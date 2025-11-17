@@ -42,8 +42,18 @@ permalink: /about/
           <div class="timeline-content">
             <h3 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Research Scientist 2</h3>
             <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.95rem;">Adobe Research</p>
-            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Present</p>
+            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Jul 2025 - Present</p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Focusing on data-driven intelligence and intelligent agents in creative content workflows. Working on optimizing and improving creative workflows for Adobe customers and users through AI-powered systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" style="position: relative; padding-bottom: 2rem; padding-left: 2rem; border-left: 1px solid #2a2a2a;">
+          <div class="timeline-marker" style="position: absolute; left: -6px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f;"></div>
+          <div class="timeline-content">
+            <h3 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Research Scientist 1</h3>
+            <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.95rem;">Adobe Research</p>
+            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Mar 2023 - Jul 2025</p>
+            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Worked on data-driven intelligence and intelligent agents in creative content workflows, focusing on optimizing creative workflows for Adobe customers and users.</p>
           </div>
         </div>
 
@@ -52,8 +62,18 @@ permalink: /about/
           <div class="timeline-content">
             <h3 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Ph.D. in Computer Science</h3>
             <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.95rem;">University of Massachusetts, Amherst</p>
-            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Advised by Prof. Michael Zink</p>
+            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Sep 2016 - Feb 2023 | Advised by Prof. Michael Zink</p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Completed Ph.D. in the Multimedia & Networks Lab with a research focus on optimizing multimedia experiences in live video streaming. Built expertise in network protocols, video streaming optimization, and multimedia systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" style="position: relative; padding-bottom: 2rem; padding-left: 2rem; border-left: 1px solid #2a2a2a;">
+          <div class="timeline-marker" style="position: absolute; left: -6px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: #a8c5e0; border: 2px solid #0f0f0f;"></div>
+          <div class="timeline-content">
+            <h3 style="font-size: 1.2rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400;">Masters</h3>
+            <p style="color: #c4a8d8; font-weight: 400; margin-bottom: 0.5rem; font-size: 0.95rem;">University of Massachusetts, Amherst</p>
+            <p style="color: #808080; margin-bottom: 0.5rem; font-size: 0.9rem;">Sep 2014 - Aug 2016</p>
+            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">Graduate studies in Computer Science, building foundational knowledge in computer systems, networks, and multimedia technologies.</p>
           </div>
         </div>
 
