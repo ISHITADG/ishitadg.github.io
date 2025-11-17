@@ -61,6 +61,8 @@ navbar:
     link: "/news/"
   - name: "Publications"
     link: "/publications/"
+  - name: "Education"
+    link: "/education/"
   - name: "Contact"
     link: "/contact/"
 

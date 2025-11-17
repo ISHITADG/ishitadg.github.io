@@ -28,7 +28,7 @@ permalink: /news/
           <span class="toggle-icon" id="h2-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h2-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h2_2025_pubs = site.publications | where_exp: "pub", "pub.date >= '2025-07-01' and pub.date < '2026-01-01'" | sort: 'date' | reverse %}
+          {% assign h2_2025_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2025' and pub.date | date: '%m' | plus: 0 >= 7" | sort: 'date' | reverse %}
           {% for pub in h2_2025_pubs %}
             {% unless pub.title contains "SmartEdit" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
@@ -80,7 +80,7 @@ permalink: /news/
           <span class="toggle-icon" id="h1-2025-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h1-2025-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h1_2025_pubs = site.publications | where_exp: "pub", "pub.date >= '2025-01-01' and pub.date < '2025-07-01'" | sort: 'date' | reverse %}
+          {% assign h1_2025_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2025' and pub.date | date: '%m' | plus: 0 < 7" | sort: 'date' | reverse %}
           {% for pub in h1_2025_pubs %}
             {% if pub.title contains "SmartEdit" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
@@ -132,7 +132,7 @@ permalink: /news/
           <span class="toggle-icon" id="h1-2024-icon" style="margin-left: auto; color: #a8c5e0; font-size: 1.2rem;">▼</span>
         </div>
         <div class="timeline-content" id="h1-2024-content" style="display: block; padding-left: 1.5rem; border-left: 1px solid #2a2a2a;">
-          {% assign h1_2024_pubs = site.publications | where_exp: "pub", "pub.date >= '2024-01-01' and pub.date < '2024-07-01'" | sort: 'date' | reverse %}
+          {% assign h1_2024_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date | date: '%Y' == '2024' and pub.date | date: '%m' | plus: 0 < 7" | sort: 'date' | reverse %}
           {% for pub in h1_2024_pubs %}
             {% if pub.title contains "Large content" or pub.title contains "Text-to-hand" %}
             <div class="timeline-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2a2a2a;">
