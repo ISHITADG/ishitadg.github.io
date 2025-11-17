@@ -3,7 +3,7 @@ title: "Ishita Dasgupta"
 name: "Ishita Dasgupta"
 description: "Research Scientist | Computer Vision | Machine Learning | Adobe Research"
 url: "https://ISHITADG.github.io"
-baseurl: ""
+baseurl: "/website"
 
 # Build settings
 markdown: kramdown
