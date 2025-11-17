@@ -54,7 +54,7 @@ layout: default
       <!-- Recent Publications Tab -->
       <div id="tab-publications" class="tab-content active" style="display: block;">
         <div class="publications-list" style="display: grid; gap: 1.5rem;">
-          {% assign sorted_pubs = site.publications | where_exp: "pub", "pub.date != nil" | sort: 'date' | reverse %}
+          {% assign sorted_pubs = site.publications | where_exp: "pub", "pub.date != nil and pub.date contains '2025'" | sort: 'date' | reverse %}
           {% for pub in sorted_pubs limit: 5 %}
           <div class="publication-card" style="background: #1a1a1a; padding: 1.5rem; border-radius: 4px; border-left: 2px solid #a8c5e0; border: 1px solid #2a2a2a; transition: border-color 0.3s;">
             <h3 style="font-size: 1.1rem; color: #e8e8e8; margin-bottom: 0.5rem; font-weight: 400; line-height: 1.5;">
@@ -149,9 +149,9 @@ layout: default
                style="display: inline-block; padding: 10px 24px; background: transparent; border: 1px solid #a8c5e0; color: #a8c5e0; text-decoration: none; border-radius: 4px; font-weight: 400; margin-right: 10px; transition: all 0.3s; font-size: 0.95rem;">
               Visit Workshop Website →
             </a>
-            <a href="https://short-form-video-understanding.github.io/#submission" target="_blank"
+            <a href="https://short-form-video-understanding.github.io/#schedule" target="_blank"
                style="display: inline-block; padding: 10px 24px; background: transparent; border: 1px solid #c4a8d8; color: #c4a8d8; text-decoration: none; border-radius: 4px; font-weight: 400; transition: all 0.3s; font-size: 0.95rem;">
-              Submission Guidelines →
+              Full Schedule →
             </a>
           </div>
         </div>

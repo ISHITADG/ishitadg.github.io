@@ -152,16 +152,43 @@
   
   <footer>
     <div class="container">
-      <div class="social-links">
-        {% for social in site.social %}
-        <a href="{{ social.link }}" target="_blank" aria-label="{{ social.icon }}">
-          <i class="{{ social.icon }}"></i>
-        </a>
-        {% endfor %}
+      <div class="social-icons" style="text-align: center; margin-bottom: 1.5rem; padding-top: 1rem;">
+        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+          <a href="mailto:ishita.dasgupt@gmail.com" target="_blank" style="color: #b0b0b0; text-decoration: none; font-size: 1.5rem; transition: color 0.3s;" title="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ishitadg/" target="_blank" style="color: #b0b0b0; text-decoration: none; font-size: 1.5rem; transition: color 0.3s;" title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ" target="_blank" style="color: #b0b0b0; text-decoration: none; font-size: 1.5rem; transition: color 0.3s;" title="Google Scholar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            </svg>
+          </a>
+          <a href="https://research.adobe.com/person/ishita-dasgupta/" target="_blank" style="color: #b0b0b0; text-decoration: none; font-size: 1.5rem; transition: color 0.3s;" title="Adobe Research">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.966 22.624l-1.69-4.281H8.122l-1.69 4.281H3.47L9.64 1.376h2.72l6.17 21.248h-2.564zm-5.838-6.624h4.744l-2.372-6.008-2.372 6.008z"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <p>{{ site.footer.copyright }}</p>
-      <p style="font-size: 0.9rem; margin-top: 0.5rem;">{{ site.footer.powered_by }}</p>
+      {% if site.footer.copyright %}
+      <p style="color: #808080;">{{ site.footer.copyright }}</p>
+      {% endif %}
+      {% if site.footer.powered_by %}
+      <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #808080;">{{ site.footer.powered_by }}</p>
+      {% endif %}
     </div>
+    <style>
+      footer .social-icons a:hover {
+        color: #a8c5e0 !important;
+      }
+    </style>
   </footer>
   
 </body>

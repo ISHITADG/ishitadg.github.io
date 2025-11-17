@@ -9,12 +9,6 @@ permalink: /publications/
   <div class="publications-header" style="text-align: center; margin-bottom: 3rem;">
     <h1 style="font-size: 2.2rem; color: #e8e8e8; margin-bottom: 1rem; font-weight: 400; letter-spacing: -0.5px;">Publications</h1>
     <div class="divider" style="width: 60px; height: 1px; background: #a8c5e0; margin: 0 auto;"></div>
-    <p style="color: #b0b0b0; margin-top: 1rem; font-size: 1rem;">
-      All publications are automatically fetched from 
-      <a href="https://scholar.google.com/citations?hl=en&user=okBrMn8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color: #a8c5e0; text-decoration: none; font-weight: 400;">
-        Google Scholar
-      </a>
-    </p>
   </div>
 
   <div class="publications-list" style="display: grid; gap: 2rem;">

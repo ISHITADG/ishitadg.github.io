@@ -120,19 +120,6 @@ permalink: /news/
         </div>
       </div>
 
-      <!-- H2 2024 -->
-      <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
-        <div class="timeline-dot" onclick="togglePeriod('h2-2024')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
-        <div class="timeline-content-wrapper" style="margin-left: 50px;">
-          <div class="timeline-header" onclick="togglePeriod('h2-2024')" style="cursor: pointer; margin-bottom: 1rem;">
-            <h3 style="font-size: 1.3rem; color: #e8e8e8; font-weight: 400; margin: 0;">H2 2024</h3>
-          </div>
-          <div class="timeline-content" id="h2-2024-content" style="display: none; padding-left: 1rem; border-left: 1px solid #2a2a2a; margin-left: 0.5rem;">
-            <p style="color: #808080; font-style: italic; font-size: 0.9rem;">-</p>
-          </div>
-        </div>
-      </div>
-
       <!-- H1 2024 -->
       <div class="timeline-period" style="position: relative; margin-bottom: 2rem;">
         <div class="timeline-dot" onclick="togglePeriod('h1-2024')" style="position: absolute; left: 11px; top: 8px; width: 20px; height: 20px; border-radius: 50%; background: #a8c5e0; border: 3px solid #0f0f0f; cursor: pointer; z-index: 10; transition: all 0.3s;"></div>
@@ -223,9 +210,9 @@ permalink: /news/
            style="background: transparent; border: 1px solid #a8c5e0; color: #a8c5e0; padding: 10px 24px; border-radius: 4px; text-decoration: none; font-weight: 400; transition: all 0.3s; display: inline-block; font-size: 0.95rem;">
           Visit Workshop Website →
         </a>
-        <a href="https://short-form-video-understanding.github.io/#submission" target="_blank"
+        <a href="https://short-form-video-understanding.github.io/#schedule" target="_blank"
            style="background: transparent; border: 1px solid #c4a8d8; color: #c4a8d8; padding: 10px 24px; border-radius: 4px; text-decoration: none; font-weight: 400; transition: all 0.3s; display: inline-block; font-size: 0.95rem;">
-          Submission Guidelines →
+          Full Schedule →
         </a>
       </div>
     </div>

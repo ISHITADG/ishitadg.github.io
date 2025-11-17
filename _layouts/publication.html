@@ -2,40 +2,46 @@
 layout: default
 ---
 
-<article class="publication-page" style="max-width: 900px; margin: 0 auto; padding: 2rem 0;">
+<article class="publication-page" style="max-width: 900px; margin: 0 auto; padding: 2rem 0; background: #0f0f0f; color: #e8e8e8;">
   
   <header class="publication-header" style="margin-bottom: 2rem;">
-    <h1 style="font-size: 2rem; color: #333; margin-bottom: 1rem;">{{ page.title }}</h1>
+    <h1 style="font-size: 2rem; color: #e8e8e8; margin-bottom: 1rem;">{{ page.title }}</h1>
     
-    <div class="publication-meta" style="color: #666; margin-bottom: 1rem;">
-      <p style="margin-bottom: 0.5rem;"><strong>Authors:</strong> {{ page.authors }}</p>
+    <div class="publication-meta" style="color: #b0b0b0; margin-bottom: 1rem;">
+      <p style="margin-bottom: 0.5rem;"><strong style="color: #e8e8e8;">Authors:</strong> {{ page.authors }}</p>
       {% if page.venue %}
-      <p style="margin-bottom: 0.5rem;"><strong>Venue:</strong> {{ page.venue }}</p>
+      <p style="margin-bottom: 0.5rem;"><strong style="color: #e8e8e8;">Venue:</strong> {{ page.venue }}</p>
       {% endif %}
       {% if page.year %}
-      <p style="margin-bottom: 0.5rem;"><strong>Year:</strong> {{ page.year }}</p>
+      <p style="margin-bottom: 0.5rem;"><strong style="color: #e8e8e8;">Year:</strong> {{ page.year }}</p>
       {% endif %}
       {% if page.citations %}
-      <p style="margin-bottom: 0.5rem;"><strong>Citations:</strong> {{ page.citations }}</p>
+      <p style="margin-bottom: 0.5rem;"><strong style="color: #e8e8e8;">Citations:</strong> {{ page.citations }}</p>
       {% endif %}
     </div>
+    
+    {% if page.image %}
+    <div class="publication-image" style="margin-bottom: 2rem; text-align: center;">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+    </div>
+    {% endif %}
     
     {% if page.link %}
     <div class="publication-links" style="margin-top: 1.5rem;">
       <a href="{{ page.link }}" target="_blank" 
-         style="display: inline-block; padding: 10px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; font-weight: 600; margin-right: 10px;">
+         style="display: inline-block; padding: 10px 20px; background: #a8c5e0; color: #0f0f0f; text-decoration: none; border-radius: 5px; font-weight: 600; margin-right: 10px; transition: background 0.3s;">
         View Paper
       </a>
     </div>
     {% endif %}
   </header>
   
-  <div class="publication-content">
+  <div class="publication-content" style="color: #b0b0b0;">
     {{ content }}
   </div>
   
-  <div class="publication-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e0e0e0;">
-    <a href="{{ '/publications/' | relative_url }}" style="color: #667eea; text-decoration: none;">
+  <div class="publication-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #2a2a2a;">
+    <a href="{{ '/publications/' | relative_url }}" style="color: #a8c5e0; text-decoration: none;">
       ← Back to Publications
     </a>
   </div>

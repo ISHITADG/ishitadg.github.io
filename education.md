@@ -71,10 +71,7 @@ permalink: /education/
           </h4>
           <div id="phd-teaching-content" style="display: block;">
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              <strong style="color: #e8e8e8;">CS677: Operating Systems</strong> | Spring 2015
-            </p>
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
-              Assisted with course instruction, held office hours, graded assignments, and helped students understand complex concepts in computer networks and distributed systems.
+              <strong style="color: #e8e8e8;">CS 653: Advanced Computer Networks</strong> | Aug 2020 – Dec 2020
             </p>
           </div>
         </div>
@@ -86,16 +83,16 @@ permalink: /education/
           </h4>
           <div id="phd-leadership-content" style="display: block;">
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              • <strong style="color: #e8e8e8;">Graduate Student Representative</strong> | Department Committees (2018-2020)
+              • <strong style="color: #e8e8e8;">Program committee member</strong> | IEEE ISM 2022 (Oct 2022)
             </p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              • <strong style="color: #e8e8e8;">Conference Volunteer</strong> | ACM Multimedia, IEEE INFOCOM (2017-2022)
+              • <strong style="color: #e8e8e8;">Best Documentation award</strong> | Code Quality Jam, held at Adobe (July 2022)
             </p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              • <strong style="color: #e8e8e8;">Mentor</strong> | Undergraduate Research Program (2019-2021)
+              • <strong style="color: #e8e8e8;">Student Volunteer</strong> | MMSys 2019 (June 2019)
             </p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
-              • <strong style="color: #e8e8e8;">Student Organization Leadership</strong> | Computer Science Graduate Student Society (2018-2020)
+              • <strong style="color: #e8e8e8;">PhD Social Chair</strong> | CICS, UMass Amherst (Sept 2017)
             </p>
           </div>
         </div>
@@ -180,13 +177,10 @@ permalink: /education/
           </h4>
           <div id="ms-leadership-content" style="display: block;">
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              • <strong style="color: #e8e8e8;">Graduate Student Organization</strong> | Active member and volunteer (2014-2016)
-            </p>
-            <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem; margin-bottom: 0.5rem;">
-              • <strong style="color: #e8e8e8;">Workshop Organizer</strong> | Department seminars and workshops (2015-2016)
+              • <strong style="color: #e8e8e8;">President</strong> | Indian Student Association at UMass Amherst (May 2015-2016)
             </p>
             <p style="color: #b0b0b0; line-height: 1.7; font-size: 0.95rem;">
-              • <strong style="color: #e8e8e8;">Peer Mentor</strong> | New graduate student orientation and support (2015-2016)
+              • <strong style="color: #e8e8e8;">Volunteer</strong> | Women in Engineering and Computing Career Day (Oct 2015)
             </p>
           </div>
         </div>
